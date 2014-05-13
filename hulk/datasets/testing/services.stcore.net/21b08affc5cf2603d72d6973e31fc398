@@ -1,0 +1,15 @@
+{
+   "total_process_time_ms" : 132,
+   "total" : 1,
+   "results" : [
+      {
+         "dealer_name" : "Go Nissan North",
+         "longitude" : "-113.580775",
+         "latitude" : "53.599332",
+         "account_status" : "FULL",
+         "certifications" : [],
+         "dealer_id" : "2993"
+      }
+   ],
+   "offset" : 0
+}

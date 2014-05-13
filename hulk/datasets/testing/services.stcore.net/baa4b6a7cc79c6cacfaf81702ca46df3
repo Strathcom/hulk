@@ -1,0 +1,15 @@
+{
+   "total_process_time_ms" : 99,
+   "total" : 1,
+   "results" : [
+      {
+         "dealer_name" : "Strathcom Demo Account",
+         "longitude" : "-113.3954",
+         "latitude" : "53.514097",
+         "account_status" : "DEMO",
+         "certifications" : [],
+         "dealer_id" : "2482"
+      }
+   ],
+   "offset" : 0
+}

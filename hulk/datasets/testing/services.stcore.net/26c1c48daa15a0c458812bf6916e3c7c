@@ -1,0 +1,167 @@
+{
+   "total_process_time_ms" : 838,
+   "total" : 22,
+   "results" : {
+      "make_name" : [
+         "Ford"
+      ],
+      "engine_compressor_name" : [
+         ""
+      ],
+      "model_id" : [
+         "72"
+      ],
+      "upholstery_name" : [
+         "",
+         "Vinyl",
+         "Cloth",
+         "Leather"
+      ],
+      "upholstery_id" : [
+         null,
+         "6",
+         "1",
+         "2"
+      ],
+      "model_name" : [
+         "F-150"
+      ],
+      "fuel_type_name" : [
+         "X",
+         "U"
+      ],
+      "engine_compressor_id" : [
+         null
+      ],
+      "interior_colour_id" : [
+         "1",
+         "28",
+         "8",
+         "17"
+      ],
+      "interior_colour_name" : [
+         "Black",
+         "Grey",
+         "Brown",
+         "Tan"
+      ],
+      "drive_type_id" : [
+         "4WD",
+         "RWD"
+      ],
+      "drive_type_name" : [
+         "4WD",
+         "RWD"
+      ],
+      "trim" : [
+         "XLT",
+         "XL",
+         "Lariat",
+         "FX4",
+         "STX"
+      ],
+      "engine_config_name" : [
+         "V"
+      ],
+      "trim_variation" : [
+         "4x2 Super Cab Flareside 6.5 ft. box 145 in. WB",
+         "4x4 Super Cab Styleside 6.5 ft. box 145 in. WB",
+         "4x2 Super Cab Styleside 8 ft. box 163 in. WB",
+         "4x4 Super Cab Flareside 6.5 ft. box 145 in. WB",
+         "4x2 Super Cab Styleside 6.5 ft. box 145 in. WB",
+         "4x4 SuperCrew Cab Styleside 6.5 ft. box 150 in. WB",
+         "4x2 SuperCrew Cab Flareside 6.5 ft. box 150 in. WB",
+         "4x4 Regular Cab Styleside 8 ft. box 145 in. WB",
+         "4x2 SuperCrew Cab Styleside 5.5 ft. box 139 in. WB",
+         "4x2 Regular Cab Styleside 6.5 ft. box 126 in. WB",
+         "4x2 Regular Cab Flareside 6.5 ft. box 126 in. WB",
+         "4x4 Super Cab Styleside 8 ft. box 163 in. WB",
+         "4x4 SuperCrew Cab Styleside 5.5 ft. box 139 in. WB",
+         "4x2 Regular Cab Styleside 8 ft. box 145 in. WB",
+         "4x2 SuperCrew Cab Styleside 6.5 ft. box 150 in. WB",
+         "4x4 Regular Cab Flareside 6.5 ft. box 126 in. WB",
+         "4x2 Super Cab Styleside 5.5 ft. box 133 in. WB",
+         "4x4 SuperCrew Cab Flareside 6.5 ft. box 150 in. WB",
+         "4x4 Super Cab Styleside 5.5 ft. box 133 in. WB",
+         "4x4 Regular Cab Styleside 6.5 ft. box 126 in. WB"
+      ],
+      "make_id" : [
+         "34"
+      ],
+      "fuel_type_id" : [
+         "X",
+         "U"
+      ],
+      "transmission_id" : [
+         "5M",
+         "4A"
+      ],
+      "acode" : [
+         "CAB80FOT11FB0",
+         "CAB80FOT118C0",
+         "CAB80FOT112B0",
+         "CAB80FOT114B0",
+         "CAB80FOT119A0",
+         "CAB80FOT11HA0",
+         "CAB80FOT11JA0",
+         "CAB80FOT115B0",
+         "CAB80FOT114A0",
+         "CAB80FOT11IA0",
+         "CAB80FOT11IC0",
+         "CAB80FOT112D0",
+         "CAB80FOT11CB0",
+         "CAB80FOT111B0",
+         "CAB80FOT11AE0",
+         "CAB80FOT11AA0",
+         "CAB80FOT112A0",
+         "CAB80FOT11KB0",
+         "CAB80FOT11GC0",
+         "CAB80FOT11AC0",
+         "CAB80FOT115A0",
+         "CAB80FOT11DB0",
+         "CAB80FOT11HB0",
+         "CAB80FOT11CA0",
+         "CAB80FOT112C0",
+         "CAB80FOT11AD0",
+         "CAB80FOT11GA0",
+         "CAB80FOT113A0",
+         "CAB80FOT11FA0",
+         "CAB80FOT119C0",
+         "CAB80FOT11GB0",
+         "CAB80FOT118A0",
+         "CAB80FOT113B0",
+         "CAB80FOT11EA0",
+         "CAB80FOT111A0",
+         "CAB80FOT116A0",
+         "CAB80FOT111C0",
+         "CAB80FOT11IB0",
+         "CAB80FOT11CC0",
+         "CAB80FOT118B0",
+         "CAB80FOT117A0",
+         "CAB80FOT11DA0",
+         "CAB80FOT119D0",
+         "CAB80FOT117C0",
+         "CAB80FOT11KA0",
+         "CAB80FOT114C0",
+         "CAB80FOT117B0",
+         "CAB80FOT118D0",
+         "CAB80FOT11AB0",
+         "CAB80FOT116B0",
+         "CAB80FOT11BA0",
+         "CAB80FOT11BB0",
+         "CAB80FOT119B0",
+         "CAB80FOT11EB0"
+      ],
+      "engine_config_id" : [
+         "V"
+      ],
+      "transmission_name" : [
+         "5M",
+         "4A"
+      ],
+      "year" : [
+         "2008"
+      ]
+   },
+   "offset" : 0
+}

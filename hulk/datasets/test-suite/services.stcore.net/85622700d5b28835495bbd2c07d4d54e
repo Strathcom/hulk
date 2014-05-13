@@ -1,0 +1,15 @@
+{
+   "total_process_time_ms" : 62,
+   "total" : 1,
+   "results" : [
+      {
+         "dealer_name" : "Strathcom Motors",
+         "longitude" : "-113.4920936",
+         "latitude" : "53.5941531",
+         "account_status" : "DEMO",
+         "certifications" : [],
+         "dealer_id" : "3023"
+      }
+   ],
+   "offset" : 0
+}

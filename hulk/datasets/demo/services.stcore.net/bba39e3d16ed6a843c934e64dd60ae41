@@ -1,0 +1,229 @@
+{
+   "total_process_time_ms" : 982,
+   "total" : 2,
+   "results" : {
+      "option_codes" : [
+         {
+            "cluster_desc" : "Dealer Installed Options",
+            "item_avail" : "O",
+            "acode" : "CAB20ACC081A0",
+            "option_desc" : "Ashtray/Lighter",
+            "option_code" : "ASH"
+         },
+         {
+            "cluster_desc" : "Dealer Installed Options",
+            "item_avail" : "O",
+            "acode" : "CAB20ACC081A0",
+            "option_desc" : "Cup Holder Style Ashtray",
+            "option_code" : "ASHTRY"
+         },
+         {
+            "cluster_desc" : "Dealer Installed Options",
+            "item_avail" : "O",
+            "acode" : "CAB20ACC081A0",
+            "option_desc" : "Wheels: 15\" Sport Alloy",
+            "option_code" : "AWHEEL"
+         },
+         {
+            "cluster_desc" : "Dealer Installed Options",
+            "item_avail" : "O",
+            "acode" : "CAB20ACC081A0",
+            "option_desc" : "Block Heater",
+            "option_code" : "BLOCK"
+         },
+         {
+            "cluster_desc" : "Dealer Installed Options",
+            "item_avail" : "O",
+            "acode" : "CAB20ACC081A0",
+            "option_desc" : "Cassette Player",
+            "option_code" : "CASS"
+         },
+         {
+            "cluster_desc" : "Dealer Installed Options",
+            "item_avail" : "O",
+            "acode" : "CAB20ACC081A0",
+            "option_desc" : "CD Changer Magazine (Additional)",
+            "option_code" : "CDMAG"
+         },
+         {
+            "cluster_desc" : "Dealer Installed Options",
+            "item_avail" : "O",
+            "acode" : "CAB20ACC081A0",
+            "option_desc" : "CD Changer",
+            "option_code" : "CHNGR"
+         },
+         {
+            "cluster_desc" : "Dealer Installed Options",
+            "item_avail" : "O",
+            "acode" : "CAB20ACC081A0",
+            "option_desc" : "Chrome Exhaust Finisher",
+            "option_code" : "CHRFIN"
+         },
+         {
+            "cluster_desc" : "Dealer Installed Options",
+            "item_avail" : "O",
+            "acode" : "CAB20ACC081A0",
+            "option_desc" : "Cargo Net",
+            "option_code" : "CNET"
+         },
+         {
+            "cluster_desc" : "Dealer Installed Options",
+            "item_avail" : "O",
+            "acode" : "CAB20ACC081A0",
+            "option_desc" : "Exposed Locking Wheel Nuts",
+            "option_code" : "ELWN"
+         },
+         {
+            "cluster_desc" : "Dealer Installed Options",
+            "item_avail" : "O",
+            "acode" : "CAB20ACC081A0",
+            "option_desc" : "Full Nose Mask",
+            "option_code" : "FNMASK"
+         },
+         {
+            "cluster_desc" : "Dealer Installed Options",
+            "item_avail" : "O",
+            "acode" : "CAB20ACC081A0",
+            "option_desc" : "Gold Plated Emblem Kit",
+            "option_code" : "GEMBLM"
+         },
+         {
+            "cluster_desc" : "Dealer Installed Options",
+            "item_avail" : "O",
+            "acode" : "CAB20ACC081A0",
+            "option_desc" : "Half Nose Mask",
+            "option_code" : "HNMASK"
+         },
+         {
+            "cluster_desc" : "Dealer Installed Options",
+            "item_avail" : "O",
+            "acode" : "CAB20ACC081A0",
+            "option_desc" : "Interior Woodgrain Trim Kit",
+            "option_code" : "INTKIT"
+         },
+         {
+            "cluster_desc" : "Other Options",
+            "item_avail" : "S",
+            "acode" : "CAB20ACC081A0",
+            "option_desc" : "Monotone Paint Application",
+            "option_code" : "PAINT"
+         },
+         {
+            "cluster_desc" : "Dealer Installed Options",
+            "item_avail" : "O",
+            "acode" : "CAB20ACC081A0",
+            "option_desc" : "Rear Splash Guards",
+            "option_code" : "RSPGRD"
+         },
+         {
+            "cluster_desc" : "Dealer Installed Options",
+            "item_avail" : "O",
+            "acode" : "CAB20ACC081A0",
+            "option_desc" : "Rear Spoiler",
+            "option_code" : "RSPOIL"
+         },
+         {
+            "cluster_desc" : "Powertrain",
+            "item_avail" : "S",
+            "acode" : "CAB20ACC081A0",
+            "option_desc" : "Engine: 1.7L I-4 SOHC VTEC SMPI",
+            "option_code" : "STDEN"
+         },
+         {
+            "cluster_desc" : "Other Options",
+            "item_avail" : "S",
+            "acode" : "CAB20ACC081A0",
+            "option_desc" : "Radio: AM/FM Stereo w/CD",
+            "option_code" : "STDRD"
+         },
+         {
+            "cluster_desc" : "Seats & Seat Trim",
+            "item_avail" : "S",
+            "acode" : "CAB20ACC081A0",
+            "option_desc" : "Reclining Front Bucket Seats",
+            "option_code" : "STDST"
+         },
+         {
+            "cluster_desc" : "Seats & Seat Trim",
+            "item_avail" : "S",
+            "acode" : "CAB20ACC081A0",
+            "option_desc" : "Cloth Seat Trim",
+            "option_code" : "STDTM"
+         },
+         {
+            "cluster_desc" : "Powertrain",
+            "item_avail" : "S",
+            "acode" : "CAB20ACC081A0",
+            "option_desc" : "Transmission: 5-Speed Manual w/OD",
+            "option_code" : "STDTN"
+         },
+         {
+            "cluster_desc" : "Wheels & Tires",
+            "item_avail" : "S",
+            "acode" : "CAB20ACC081A0",
+            "option_desc" : "Tires: 185/65R15 AS M+S",
+            "option_code" : "STDTR"
+         },
+         {
+            "cluster_desc" : "Wheels & Tires",
+            "item_avail" : "S",
+            "acode" : "CAB20ACC081A0",
+            "option_desc" : "Wheels: 15\" x 6.0\" JJ Aluminum Alloy",
+            "option_code" : "STDWL"
+         },
+         {
+            "cluster_desc" : "Dealer Installed Options",
+            "item_avail" : "O",
+            "acode" : "CAB20ACC081A0",
+            "option_desc" : "Trunk Tray",
+            "option_code" : "TTRAY"
+         },
+         {
+            "cluster_desc" : "Dealer Installed Options",
+            "item_avail" : "O",
+            "acode" : "CAB20ACC081A0",
+            "option_desc" : "Touch-Up Paint",
+            "option_code" : "TUCHUP"
+         },
+         {
+            "cluster_desc" : "Dealer Installed Options",
+            "item_avail" : "O",
+            "acode" : "CAB20ACC081A0",
+            "option_desc" : "Tweeter Kit",
+            "option_code" : "TWEKIT"
+         },
+         {
+            "cluster_desc" : "Dealer Installed Options",
+            "item_avail" : "O",
+            "acode" : "CAB20ACC081A0",
+            "option_desc" : "Vent Woodgrain Trim Kit",
+            "option_code" : "VENKIT"
+         },
+         {
+            "cluster_desc" : "Dealer Installed Options",
+            "item_avail" : "O",
+            "acode" : "CAB20ACC081A0",
+            "option_desc" : "Door Visor Kit",
+            "option_code" : "VISOR"
+         },
+         {
+            "cluster_desc" : "Dealer Installed Options",
+            "item_avail" : "O",
+            "acode" : "CAB20ACC081A0",
+            "option_desc" : "Front Winter Floor Mats",
+            "option_code" : "WFMATS"
+         },
+         {
+            "cluster_desc" : "Dealer Installed Options",
+            "item_avail" : "O",
+            "acode" : "CAB20ACC081A0",
+            "option_desc" : "Rear Winter Floor Mats",
+            "option_code" : "WRMATS"
+         }
+      ],
+      "acode" : [
+         "CAB20ACC081A0"
+      ]
+   },
+   "offset" : 0
+}

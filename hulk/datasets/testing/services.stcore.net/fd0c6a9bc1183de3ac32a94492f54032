@@ -1,0 +1,768 @@
+{
+   "total_process_time_ms" : 429,
+   "total" : 2,
+   "results" : {
+      "option_codes" : [
+         {
+            "cluster_desc" : "Other Options",
+            "item_avail" : "O",
+            "acode" : "CAB30AUC013A0",
+            "option_desc" : "Power Tilt & Slide Glass Sunroof w/Sunshade",
+            "option_code" : "3FE"
+         },
+         {
+            "cluster_desc" : "Other Options",
+            "item_avail" : "O",
+            "acode" : "CAB30AUC013A0",
+            "option_desc" : "Ski Sack",
+            "option_code" : "3X1"
+         },
+         {
+            "cluster_desc" : "Other Options",
+            "item_avail" : "O",
+            "acode" : "CAB30AUC013A0",
+            "option_desc" : "Rear Side Airbag Supplemental Restraint System",
+            "option_code" : "4X4"
+         },
+         {
+            "cluster_desc" : "Dealer Installed Options",
+            "item_avail" : "O",
+            "acode" : "CAB30AUC013A0",
+            "option_desc" : "Air Pump System",
+            "option_code" : "AIRPMP"
+         },
+         {
+            "cluster_desc" : "Dealer Installed Options",
+            "item_avail" : "O",
+            "acode" : "CAB30AUC013A0",
+            "option_desc" : "Audi Logo Tire Pressure Gauge",
+            "option_code" : "AUDTPG"
+         },
+         {
+            "cluster_desc" : "Dealer Installed Options",
+            "item_avail" : "O",
+            "acode" : "CAB30AUC013A0",
+            "option_desc" : "Brushed Audi Logo License Plate Frame",
+            "option_code" : "BALF"
+         },
+         {
+            "cluster_desc" : "Dealer Installed Options",
+            "item_avail" : "O",
+            "acode" : "CAB30AUC013A0",
+            "option_desc" : "Luggage Basket",
+            "option_code" : "BASKET"
+         },
+         {
+            "cluster_desc" : "Dealer Installed Options",
+            "item_avail" : "O",
+            "acode" : "CAB30AUC013A0",
+            "option_desc" : "Brushed Audi Sport Logo License Plate Frame",
+            "option_code" : "BASLF"
+         },
+         {
+            "cluster_desc" : "Dealer Installed Options",
+            "item_avail" : "O",
+            "acode" : "CAB30AUC013A0",
+            "option_desc" : "Base Carrier Bars",
+            "option_code" : "BCBARS"
+         },
+         {
+            "cluster_desc" : "Dealer Installed Options",
+            "item_avail" : "O",
+            "acode" : "CAB30AUC013A0",
+            "option_desc" : "Bicycle Holder/Fork Mount",
+            "option_code" : "BKHMNT"
+         },
+         {
+            "cluster_desc" : "Dealer Installed Options",
+            "item_avail" : "O",
+            "acode" : "CAB30AUC013A0",
+            "option_desc" : "Bicycle Lift",
+            "option_code" : "BKLIFT"
+         },
+         {
+            "cluster_desc" : "Dealer Installed Options",
+            "item_avail" : "O",
+            "acode" : "CAB30AUC013A0",
+            "option_desc" : "Smart Blades",
+            "option_code" : "BLADES"
+         },
+         {
+            "cluster_desc" : "Dealer Installed Options",
+            "item_avail" : "O",
+            "acode" : "CAB30AUC013A0",
+            "option_desc" : "Rear Passenger Window Blinds",
+            "option_code" : "BLINDS"
+         },
+         {
+            "cluster_desc" : "Dealer Installed Options",
+            "item_avail" : "O",
+            "acode" : "CAB30AUC013A0",
+            "option_desc" : "Black Premium All-Weather Rubber Floor Mats",
+            "option_code" : "BLKMAT"
+         },
+         {
+            "cluster_desc" : "Dealer Installed Options",
+            "item_avail" : "O",
+            "acode" : "CAB30AUC013A0",
+            "option_desc" : "Additional Cargo Blocks",
+            "option_code" : "BLOCKS"
+         },
+         {
+            "cluster_desc" : "Dealer Installed Options",
+            "item_avail" : "O",
+            "acode" : "CAB30AUC013A0",
+            "option_desc" : "Glovebox 6-Disc CD Changer",
+            "option_code" : "BOX6CD"
+         },
+         {
+            "cluster_desc" : "Dealer Installed Options",
+            "item_avail" : "O",
+            "acode" : "CAB30AUC013A0",
+            "option_desc" : "Black Pearl Audi Logo License Plate Frame",
+            "option_code" : "BPALF"
+         },
+         {
+            "cluster_desc" : "Dealer Installed Options",
+            "item_avail" : "O",
+            "acode" : "CAB30AUC013A0",
+            "option_desc" : "Black Pearl Slim Line License Plate Frame",
+            "option_code" : "BPSLF"
+         },
+         {
+            "cluster_desc" : "Dealer Installed Options",
+            "item_avail" : "O",
+            "acode" : "CAB30AUC013A0",
+            "option_desc" : "Brushed Slim Line License Plate Frame",
+            "option_code" : "BSLF"
+         },
+         {
+            "cluster_desc" : "Dealer Installed Options",
+            "item_avail" : "O",
+            "acode" : "CAB30AUC013A0",
+            "option_desc" : "Brushed Stainless Steel Full Size Vanity Plate",
+            "option_code" : "BSSVP"
+         },
+         {
+            "cluster_desc" : "Dealer Installed Options",
+            "item_avail" : "O",
+            "acode" : "CAB30AUC013A0",
+            "option_desc" : "Brushed Stainless Steel Euro Look Vanity Plate",
+            "option_code" : "BSSVP2"
+         },
+         {
+            "cluster_desc" : "Dealer Installed Options",
+            "item_avail" : "O",
+            "acode" : "CAB30AUC013A0",
+            "option_desc" : "Sport/Luggage Cargo Box",
+            "option_code" : "CARBOX"
+         },
+         {
+            "cluster_desc" : "Dealer Installed Options",
+            "item_avail" : "O",
+            "acode" : "CAB30AUC013A0",
+            "option_desc" : "Car Duster",
+            "option_code" : "CARDUS"
+         },
+         {
+            "cluster_desc" : "Dealer Installed Options",
+            "item_avail" : "O",
+            "acode" : "CAB30AUC013A0",
+            "option_desc" : "Soft Luggage Carrier",
+            "option_code" : "CARIER"
+         },
+         {
+            "cluster_desc" : "Dealer Installed Options",
+            "item_avail" : "O",
+            "acode" : "CAB30AUC013A0",
+            "option_desc" : "Complete Car Care Product Kit",
+            "option_code" : "CARKIT"
+         },
+         {
+            "cluster_desc" : "Dealer Installed Options",
+            "item_avail" : "O",
+            "acode" : "CAB30AUC013A0",
+            "option_desc" : "Hands-Free Cellular Phone Adapter Kit",
+            "option_code" : "CELKIT"
+         },
+         {
+            "cluster_desc" : "Dealer Installed Options",
+            "item_avail" : "O",
+            "acode" : "CAB30AUC013A0",
+            "option_desc" : "Carbon Fibre Audi Logo License Plate Frame",
+            "option_code" : "CFALF"
+         },
+         {
+            "cluster_desc" : "Dealer Installed Options",
+            "item_avail" : "O",
+            "acode" : "CAB30AUC013A0",
+            "option_desc" : "Carbon Fibre Audi Sport Logo License Plate Frame",
+            "option_code" : "CFASLF"
+         },
+         {
+            "cluster_desc" : "Dealer Installed Options",
+            "item_avail" : "O",
+            "acode" : "CAB30AUC013A0",
+            "option_desc" : "Synthetic Drying Cloth",
+            "option_code" : "CLOTH"
+         },
+         {
+            "cluster_desc" : "Dealer Installed Options",
+            "item_avail" : "O",
+            "acode" : "CAB30AUC013A0",
+            "option_desc" : "Clay Premium All-Weather Rubber Floor Mats",
+            "option_code" : "CLYMAT"
+         },
+         {
+            "cluster_desc" : "Dealer Installed Options",
+            "item_avail" : "O",
+            "acode" : "CAB30AUC013A0",
+            "option_desc" : "Storage Cover Cable & Lock Set",
+            "option_code" : "CVRSET"
+         },
+         {
+            "cluster_desc" : "Dealer Installed Options",
+            "item_avail" : "O",
+            "acode" : "CAB30AUC013A0",
+            "option_desc" : "Digital Tire Pressure Gauge",
+            "option_code" : "DIGTPG"
+         },
+         {
+            "cluster_desc" : "Dealer Installed Options",
+            "item_avail" : "O",
+            "acode" : "CAB30AUC013A0",
+            "option_desc" : "18 oz. Concourse Dressing & Protectant",
+            "option_code" : "DRSSNG"
+         },
+         {
+            "cluster_desc" : "Dealer Installed Options",
+            "item_avail" : "O",
+            "acode" : "CAB30AUC013A0",
+            "option_desc" : "18 oz. Detailing Spray",
+            "option_code" : "DSPRAY"
+         },
+         {
+            "cluster_desc" : "Dealer Installed Options",
+            "item_avail" : "O",
+            "acode" : "CAB30AUC013A0",
+            "option_desc" : "Emergency Hammer",
+            "option_code" : "EMGHAM"
+         },
+         {
+            "cluster_desc" : "Dealer Installed Options",
+            "item_avail" : "O",
+            "acode" : "CAB30AUC013A0",
+            "option_desc" : "European Style Front Rubber Mats (Set of 2)",
+            "option_code" : "EUMATF"
+         },
+         {
+            "cluster_desc" : "Dealer Installed Options",
+            "item_avail" : "O",
+            "acode" : "CAB30AUC013A0",
+            "option_desc" : "European Style Rear Rubber Mats (Set of 2)",
+            "option_code" : "EUMATR"
+         },
+         {
+            "cluster_desc" : "Dealer Installed Options",
+            "item_avail" : "O",
+            "acode" : "CAB30AUC013A0",
+            "option_desc" : "Form-Fit Moulded Front Splash Guards",
+            "option_code" : "FGUARD"
+         },
+         {
+            "cluster_desc" : "Dealer Installed Options",
+            "item_avail" : "O",
+            "acode" : "CAB30AUC013A0",
+            "option_desc" : "Custom Front End Cover",
+            "option_code" : "FRCVR"
+         },
+         {
+            "cluster_desc" : "Dealer Installed Options",
+            "item_avail" : "O",
+            "acode" : "CAB30AUC013A0",
+            "option_desc" : "Front Spoiler",
+            "option_code" : "FSPOIL"
+         },
+         {
+            "cluster_desc" : "Dealer Installed Options",
+            "item_avail" : "O",
+            "acode" : "CAB30AUC013A0",
+            "option_desc" : "Fuse Service Kit",
+            "option_code" : "FUSKIT"
+         },
+         {
+            "cluster_desc" : "Other Options",
+            "item_avail" : "O",
+            "acode" : "CAB30AUC013A0",
+            "option_desc" : "Ontario Gas Tax",
+            "option_code" : "GASTAX"
+         },
+         {
+            "cluster_desc" : "Dealer Installed Options",
+            "item_avail" : "O",
+            "acode" : "CAB30AUC013A0",
+            "option_desc" : "18 oz. Crystal Clear Glass Cleaner",
+            "option_code" : "GLCLNR"
+         },
+         {
+            "cluster_desc" : "Dealer Installed Options",
+            "item_avail" : "O",
+            "acode" : "CAB30AUC013A0",
+            "option_desc" : "Maintenance Gloves",
+            "option_code" : "GLOVES"
+         },
+         {
+            "cluster_desc" : "Dealer Installed Options",
+            "item_avail" : "O",
+            "acode" : "CAB30AUC013A0",
+            "option_desc" : "Rear Grille Set",
+            "option_code" : "GRILLE"
+         },
+         {
+            "cluster_desc" : "Dealer Installed Options",
+            "item_avail" : "O",
+            "acode" : "CAB30AUC013A0",
+            "option_desc" : "Stainless Steel Grille Strips",
+            "option_code" : "GRLSTP"
+         },
+         {
+            "cluster_desc" : "Dealer Installed Options",
+            "item_avail" : "O",
+            "acode" : "CAB30AUC013A0",
+            "option_desc" : "Grey Premium All-Weather Rubber Floor Mats",
+            "option_code" : "GRYMAT"
+         },
+         {
+            "cluster_desc" : "Dealer Installed Options",
+            "item_avail" : "O",
+            "acode" : "CAB30AUC013A0",
+            "option_desc" : "Custom Coat Hanger",
+            "option_code" : "HANGER"
+         },
+         {
+            "cluster_desc" : "Dealer Installed Options",
+            "item_avail" : "O",
+            "acode" : "CAB30AUC013A0",
+            "option_desc" : "Snow Brush w/Ice Scraper",
+            "option_code" : "ICESNW"
+         },
+         {
+            "cluster_desc" : "Dealer Installed Options",
+            "item_avail" : "O",
+            "acode" : "CAB30AUC013A0",
+            "option_desc" : "8 oz. Leather Cleaner",
+            "option_code" : "LTHRCL"
+         },
+         {
+            "cluster_desc" : "Dealer Installed Options",
+            "item_avail" : "O",
+            "acode" : "CAB30AUC013A0",
+            "option_desc" : "8 oz. Leather Lotion",
+            "option_code" : "LTHRLO"
+         },
+         {
+            "cluster_desc" : "Dealer Installed Options",
+            "item_avail" : "O",
+            "acode" : "CAB30AUC013A0",
+            "option_desc" : "Premium Car Wash Mitt",
+            "option_code" : "MITT"
+         },
+         {
+            "cluster_desc" : "Dealer Installed Options",
+            "item_avail" : "O",
+            "acode" : "CAB30AUC013A0",
+            "option_desc" : "Moulded Console Phone Holder",
+            "option_code" : "MLDCON"
+         },
+         {
+            "cluster_desc" : "Dealer Installed Options",
+            "item_avail" : "O",
+            "acode" : "CAB30AUC013A0",
+            "option_desc" : "Multi-Season Carpeted Floor Mats (Set of 4)",
+            "option_code" : "MSMATS"
+         },
+         {
+            "cluster_desc" : "Seats & Seat Trim",
+            "item_avail" : "O",
+            "acode" : "CAB30AUC013A0",
+            "option_desc" : "Leather Seating Inserts",
+            "option_code" : "N1F"
+         },
+         {
+            "cluster_desc" : "Seats & Seat Trim",
+            "item_avail" : "S",
+            "acode" : "CAB30AUC013A0",
+            "option_desc" : "Cloth Upholstery",
+            "option_code" : "N3A"
+         },
+         {
+            "cluster_desc" : "Dealer Installed Options",
+            "item_avail" : "O",
+            "acode" : "CAB30AUC013A0",
+            "option_desc" : "Original Equipment Front Replacement Mats",
+            "option_code" : "OEMATF"
+         },
+         {
+            "cluster_desc" : "Dealer Installed Options",
+            "item_avail" : "O",
+            "acode" : "CAB30AUC013A0",
+            "option_desc" : "Original Equipment Rear Replacement Mats",
+            "option_code" : "OEMATR"
+         },
+         {
+            "cluster_desc" : "Other Options",
+            "item_avail" : "S",
+            "acode" : "CAB30AUC013A0",
+            "option_desc" : "Monotone Paint Application",
+            "option_code" : "PAINT"
+         },
+         {
+            "cluster_desc" : "Dealer Installed Options",
+            "item_avail" : "O",
+            "acode" : "CAB30AUC013A0",
+            "option_desc" : "Polished Audi Logo License Plate Frame",
+            "option_code" : "PALF"
+         },
+         {
+            "cluster_desc" : "Dealer Installed Options",
+            "item_avail" : "O",
+            "acode" : "CAB30AUC013A0",
+            "option_desc" : "Powder Coated Black Steel Full Size Vanity Plate",
+            "option_code" : "PCBVP"
+         },
+         {
+            "cluster_desc" : "Dealer Installed Options",
+            "item_avail" : "O",
+            "acode" : "CAB30AUC013A0",
+            "option_desc" : "Powder Coated Black Steel Euro Look Vanity Plate",
+            "option_code" : "PCBVP2"
+         },
+         {
+            "cluster_desc" : "Other Options",
+            "item_avail" : "O",
+            "acode" : "CAB30AUC013A0",
+            "option_desc" : "Comfort Package",
+            "option_code" : "PCX"
+         },
+         {
+            "cluster_desc" : "Other Options",
+            "item_avail" : "O",
+            "acode" : "CAB30AUC013A0",
+            "option_desc" : "Convenience Package",
+            "option_code" : "PPD"
+         },
+         {
+            "cluster_desc" : "Dealer Installed Options",
+            "item_avail" : "O",
+            "acode" : "CAB30AUC013A0",
+            "option_desc" : "Polished Slim Line License Plate Frame",
+            "option_code" : "PSLF"
+         },
+         {
+            "cluster_desc" : "Dealer Installed Options",
+            "item_avail" : "O",
+            "acode" : "CAB30AUC013A0",
+            "option_desc" : "Wheels: 17\" x 7.5\" RC Alloy",
+            "option_code" : "RCWHL"
+         },
+         {
+            "cluster_desc" : "Dealer Installed Options",
+            "item_avail" : "O",
+            "acode" : "CAB30AUC013A0",
+            "option_desc" : "Form-Fit Moulded Rear Splash Guards",
+            "option_code" : "RGUARD"
+         },
+         {
+            "cluster_desc" : "Dealer Installed Options",
+            "item_avail" : "O",
+            "acode" : "CAB30AUC013A0",
+            "option_desc" : "Wheels: 18\" x 8\" Type RS4 Alloy",
+            "option_code" : "RS4WH2"
+         },
+         {
+            "cluster_desc" : "Dealer Installed Options",
+            "item_avail" : "O",
+            "acode" : "CAB30AUC013A0",
+            "option_desc" : "Wheels: 17\" x 7.5\" Type RS4 Alloy",
+            "option_code" : "RS4WHL"
+         },
+         {
+            "cluster_desc" : "Dealer Installed Options",
+            "item_avail" : "O",
+            "acode" : "CAB30AUC013A0",
+            "option_desc" : "Rear Skirt",
+            "option_code" : "RSKIRT"
+         },
+         {
+            "cluster_desc" : "Dealer Installed Options",
+            "item_avail" : "O",
+            "acode" : "CAB30AUC013A0",
+            "option_desc" : "Wheels: 18\" x 8\" RSII 2-Piece Alloy",
+            "option_code" : "RSWHL"
+         },
+         {
+            "cluster_desc" : "Dealer Installed Options",
+            "item_avail" : "O",
+            "acode" : "CAB30AUC013A0",
+            "option_desc" : "Foam Rubber Cargo Mat",
+            "option_code" : "RUBMAT"
+         },
+         {
+            "cluster_desc" : "Dealer Installed Options",
+            "item_avail" : "O",
+            "acode" : "CAB30AUC013A0",
+            "option_desc" : "8 oz. Sealer Polish",
+            "option_code" : "SEALER"
+         },
+         {
+            "cluster_desc" : "Dealer Installed Options",
+            "item_avail" : "O",
+            "acode" : "CAB30AUC013A0",
+            "option_desc" : "Side Skirts",
+            "option_code" : "SKIRTS"
+         },
+         {
+            "cluster_desc" : "Dealer Installed Options",
+            "item_avail" : "O",
+            "acode" : "CAB30AUC013A0",
+            "option_desc" : "Ski/Snowboard Attachment",
+            "option_code" : "SKISNO"
+         },
+         {
+            "cluster_desc" : "Dealer Installed Options",
+            "item_avail" : "O",
+            "acode" : "CAB30AUC013A0",
+            "option_desc" : "Rear Spoiler (Unpainted)",
+            "option_code" : "SPOILR"
+         },
+         {
+            "cluster_desc" : "Dealer Installed Options",
+            "item_avail" : "O",
+            "acode" : "CAB30AUC013A0",
+            "option_desc" : "Audi Sport Logo Tire Pressure Gauge",
+            "option_code" : "SPTTPG"
+         },
+         {
+            "cluster_desc" : "Dealer Installed Options",
+            "item_avail" : "O",
+            "acode" : "CAB30AUC013A0",
+            "option_desc" : "Audi Rings Logo Storage Cover",
+            "option_code" : "STCVR1"
+         },
+         {
+            "cluster_desc" : "Dealer Installed Options",
+            "item_avail" : "O",
+            "acode" : "CAB30AUC013A0",
+            "option_desc" : "Audi Sport Logo Storage Cover",
+            "option_code" : "STCVR2"
+         },
+         {
+            "cluster_desc" : "Powertrain",
+            "item_avail" : "S",
+            "acode" : "CAB30AUC013A0",
+            "option_desc" : "Engine: 1.8L I-4 DOHC SMPI Turbo",
+            "option_code" : "STDEN"
+         },
+         {
+            "cluster_desc" : "Other Options",
+            "item_avail" : "S",
+            "acode" : "CAB30AUC013A0",
+            "option_desc" : "Radio: Concert AM/FM w/In-Dash CD Player",
+            "option_code" : "STDRD"
+         },
+         {
+            "cluster_desc" : "Seats & Seat Trim",
+            "item_avail" : "S",
+            "acode" : "CAB30AUC013A0",
+            "option_desc" : "Front Sport Bucket Seats",
+            "option_code" : "STDST"
+         },
+         {
+            "cluster_desc" : "Powertrain",
+            "item_avail" : "S",
+            "acode" : "CAB30AUC013A0",
+            "option_desc" : "Transmission: 6-Speed Multitronic w/OD",
+            "option_code" : "STDTN"
+         },
+         {
+            "cluster_desc" : "Wheels & Tires",
+            "item_avail" : "S",
+            "acode" : "CAB30AUC013A0",
+            "option_desc" : "Tires: P205/65HR15 All-Season",
+            "option_code" : "STDTR"
+         },
+         {
+            "cluster_desc" : "Wheels & Tires",
+            "item_avail" : "S",
+            "acode" : "CAB30AUC013A0",
+            "option_desc" : "Wheels: 7J x 15\" ET 39 7-Spoke Forged Alloy",
+            "option_code" : "STDWL"
+         },
+         {
+            "cluster_desc" : "Dealer Installed Options",
+            "item_avail" : "O",
+            "acode" : "CAB30AUC013A0",
+            "option_desc" : "Sunroof Air Deflector",
+            "option_code" : "SUNDEF"
+         },
+         {
+            "cluster_desc" : "Dealer Installed Options",
+            "item_avail" : "O",
+            "acode" : "CAB30AUC013A0",
+            "option_desc" : "Surfboard Holder",
+            "option_code" : "SURF"
+         },
+         {
+            "cluster_desc" : "Dealer Installed Options",
+            "item_avail" : "O",
+            "acode" : "CAB30AUC013A0",
+            "option_desc" : "Safety Vest",
+            "option_code" : "SVEST"
+         },
+         {
+            "cluster_desc" : "Dealer Installed Options",
+            "item_avail" : "O",
+            "acode" : "CAB30AUC013A0",
+            "option_desc" : "Audi Tire Covers w/Audi Rings Logo",
+            "option_code" : "TCOVRS"
+         },
+         {
+            "cluster_desc" : "Dealer Installed Options",
+            "item_avail" : "O",
+            "acode" : "CAB30AUC013A0",
+            "option_desc" : "Emergency Signal Triangle",
+            "option_code" : "TRIANG"
+         },
+         {
+            "cluster_desc" : "Dealer Installed Options",
+            "item_avail" : "O",
+            "acode" : "CAB30AUC013A0",
+            "option_desc" : "Moulded Carpeted Trunk Mat w/Cargo Management",
+            "option_code" : "TRKMAT"
+         },
+         {
+            "cluster_desc" : "Dealer Installed Options",
+            "item_avail" : "O",
+            "acode" : "CAB30AUC013A0",
+            "option_desc" : "Upright Barracuda Bicycle Holder",
+            "option_code" : "UPBIKE"
+         },
+         {
+            "cluster_desc" : "Dealer Installed Options",
+            "item_avail" : "O",
+            "acode" : "CAB30AUC013A0",
+            "option_desc" : "Audi UV Sunshield",
+            "option_code" : "UVSLD"
+         },
+         {
+            "cluster_desc" : "Dealer Installed Options",
+            "item_avail" : "O",
+            "acode" : "CAB30AUC013A0",
+            "option_desc" : "Audi Sport Logo Valve Stem Caps (Black)",
+            "option_code" : "VSTEM1"
+         },
+         {
+            "cluster_desc" : "Dealer Installed Options",
+            "item_avail" : "O",
+            "acode" : "CAB30AUC013A0",
+            "option_desc" : "Audi Sport Logo Valve Stem Caps (Red)",
+            "option_code" : "VSTEM2"
+         },
+         {
+            "cluster_desc" : "Dealer Installed Options",
+            "item_avail" : "O",
+            "acode" : "CAB30AUC013A0",
+            "option_desc" : "Audi Logo Valve Stem Caps",
+            "option_code" : "VSTEM3"
+         },
+         {
+            "cluster_desc" : "Dealer Installed Options",
+            "item_avail" : "O",
+            "acode" : "CAB30AUC013A0",
+            "option_desc" : "Audi A4 Logo Valve Stem Caps",
+            "option_code" : "VSTEM4"
+         },
+         {
+            "cluster_desc" : "Dealer Installed Options",
+            "item_avail" : "O",
+            "acode" : "CAB30AUC013A0",
+            "option_desc" : "Wheels: 17\" x 8\" 10-Spoke Alloy",
+            "option_code" : "W10SPK"
+         },
+         {
+            "cluster_desc" : "Dealer Installed Options",
+            "item_avail" : "O",
+            "acode" : "CAB30AUC013A0",
+            "option_desc" : "8 oz. Premium Wash & Wax",
+            "option_code" : "WASWX"
+         },
+         {
+            "cluster_desc" : "Dealer Installed Options",
+            "item_avail" : "O",
+            "acode" : "CAB30AUC013A0",
+            "option_desc" : "Wheels: 17\" x 7.5\" Calina Alloy",
+            "option_code" : "WCALIN"
+         },
+         {
+            "cluster_desc" : "Dealer Installed Options",
+            "item_avail" : "O",
+            "acode" : "CAB30AUC013A0",
+            "option_desc" : "Wheels: 17\" x 7.5\" Cantona Alloy",
+            "option_code" : "WCANTO"
+         },
+         {
+            "cluster_desc" : "Dealer Installed Options",
+            "item_avail" : "O",
+            "acode" : "CAB30AUC013A0",
+            "option_desc" : "18 oz. Alloy Wheel Cleaner",
+            "option_code" : "WHLCLN"
+         },
+         {
+            "cluster_desc" : "Dealer Installed Options",
+            "item_avail" : "O",
+            "acode" : "CAB30AUC013A0",
+            "option_desc" : "Audi Custom Wheel Nut Service Kit",
+            "option_code" : "WHLKIT"
+         },
+         {
+            "cluster_desc" : "Dealer Installed Options",
+            "item_avail" : "O",
+            "acode" : "CAB30AUC013A0",
+            "option_desc" : "Premium Winter Wiper Blades",
+            "option_code" : "WIPER"
+         },
+         {
+            "cluster_desc" : "Dealer Installed Options",
+            "item_avail" : "O",
+            "acode" : "CAB30AUC013A0",
+            "option_desc" : "Walnut Wooden Gear Shift Knob",
+            "option_code" : "WKNOB"
+         },
+         {
+            "cluster_desc" : "Dealer Installed Options",
+            "item_avail" : "O",
+            "acode" : "CAB30AUC013A0",
+            "option_desc" : "Wheel Brush",
+            "option_code" : "WLBRSH"
+         },
+         {
+            "cluster_desc" : "Dealer Installed Options",
+            "item_avail" : "O",
+            "acode" : "CAB30AUC013A0",
+            "option_desc" : "Winter Wheels",
+            "option_code" : "WNTRWL"
+         },
+         {
+            "cluster_desc" : "Dealer Installed Options",
+            "item_avail" : "O",
+            "acode" : "CAB30AUC013A0",
+            "option_desc" : "Wheels: 17\" x 7.5\" Pacino Alloy",
+            "option_code" : "WPACIN"
+         }
+      ],
+      "acode" : [
+         "CAB30AUC013A0"
+      ]
+   },
+   "offset" : 0
+}

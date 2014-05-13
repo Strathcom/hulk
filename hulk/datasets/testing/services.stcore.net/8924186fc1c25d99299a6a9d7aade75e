@@ -1,0 +1,11 @@
+{
+   "total_process_time_ms" : 73,
+   "total" : "1",
+   "results" : [
+      {
+         "item_key" : "3370637",
+         "dealer_id" : "777"
+      }
+   ],
+   "offset" : 0
+}

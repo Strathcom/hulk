@@ -1,0 +1,44 @@
+{
+   "total_process_time_ms" : 66,
+   "total" : 1,
+   "results" : [
+      {
+         "dealer_name" : "!Strathcom Test Account",
+         "longitude" : "-113.5006",
+         "latitude" : "53.5472",
+         "account_status" : "DEMO",
+         "certifications" : [
+            {
+               "program_icon" : "acura",
+               "short_description" : "<ul>\n\t<li>7-year / 130,000 km Transferable Acura Certified Warranty with Optional Comprehensive Warranty</li>\n\t<li>125-Point Manufacturer-Specified Inspection</li>\n\t<li>Exclusive Selection of Premium Acura Vehicles with CarProof report</li>\n\t<li>Customer 7-day / 1,000 km Exchange Privilege</li>\n\t<li>24/7 Roadside Assistance</li>\n\t<li>Preferred Financing Options through Acura Financial Services</li>\n\t<li>3-month SiriusXM Select Plan with Option to Extend</li>\n</ul>",
+               "program_id" : "1",
+               "program_description" : "<ul>\n\t<li>7-year / 130,000 km Transferable Acura Certified Warranty with Optional Comprehensive Warranty</li>\n\t<li>125-Point Manufacturer-Specified Inspection</li>\n\t<li>Exclusive Selection of Premium Acura Vehicles with CarProof report</li>\n\t<li>Customer 7-day / 1,000 km Exchange Privilege</li>\n\t<li>24/7 Roadside Assistance</li>\n\t<li>Preferred Financing Options through Acura Financial Services</li>\n\t<li>3-month SiriusXM Select Plan with Option to Extend</li>\n</ul>",
+               "program_name" : "Acura Certified Pre-Owned"
+            },
+            {
+               "program_icon" : "ford_can",
+               "short_description" : "<ul>\r\n<li>Minimum 12month / 20,000KM factory backed limited warranty\r\n<li>115 point inspection\r\n<li>24-hour Roadside Assistance\r\n<li>3 day / 500KM money back guarantee</li></ul>",
+               "program_id" : "6",
+               "program_description" : "<ul><li>Minimum 12month / 20,000KM factory backed limited warranty<li>115 point inspection<li>24-hour Roadside Assistance<li>3 day / 500KM money back guarantee</li></ul>",
+               "program_name" : "Ford Quality Certified Pre-Owned"
+            },
+            {
+               "program_icon" : "gm_can",
+               "short_description" : "<ul>\r\n<li>150-Plus Point Inspection: \r\n<li>Manufacturer's Warranty: \r\n<li>24-Hour Roadside Assistance: \r\n<li>30 day/2,500 km no-hassle exchange privilege\r\n<li>GM Optimum: Available at select GM Dealers</li></ul>",
+               "program_id" : "4",
+               "program_description" : "150-Plus Point Inspection: Take comfort in the knowledge that the Optimum Used Vehicle you choose has been thoroughly inspected to give you optimum reliability, quality and satisfaction. Manufacturer's Warranty: And, you have the option of extending your coverage to longer terms and more comprehensive Optimum Protection Plans. 24-Hour Roadside Assistance: Every Optimum Vehicle gives you peace of mind driving with a minimum of 3 months or 5,000 kilometres of 24-hour roadside assistance for as long as the warranty is in force. Exchange Privilege: If you decide the Optimum Used Vehicle you've purchased or leased is not right for you, you can exchange it within 30 days or 2,500 km.<br> GM Optimum: Available at select GM Dealers.",
+               "program_name" : "GM Optimum Certified Used Vehicles"
+            },
+            {
+               "program_icon" : "honda_can",
+               "short_description" : "",
+               "program_id" : "50",
+               "program_description" : "<ul>\n<li>6year/120,000km transferable Powertrain warranty coverage, with option to upgrade to a comprehensive extended warranty.</li>\n<li>7 days/1000km exchange privilege.</li>\n<li>100 point inspection.</li>\n<li>Carproof Vehicle History Report (carproof.com).</li>\n</ul>",
+               "program_name" : "Honda Certified Used Vehicles"
+            }
+         ],
+         "dealer_id" : "777"
+      }
+   ],
+   "offset" : 0
+}

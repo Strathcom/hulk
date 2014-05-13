@@ -1,0 +1,64 @@
+#!/bin/env python
+
+__doc__ = """Big dumb proxy for testing service-heavy applications.
+
+Usage:
+  hulk [--dataset=testing] [--load-origin] [--base-folder] [--debug]
+  hulk (--help | -h)
+
+Options:
+  --dataset=testing   The set of cached data to use [default: testing]
+  --load-origin       Use this flag to populate new datasets
+  --debug             Run hulk with debugging info
+  --help -h           Show this screen.
+
+"""
+import os
+import logging
+
+from flask import Flask, request
+from docopt import docopt
+from hulk.application import app
+from hulk.handler import handle_request
+
+
+logger = logging.getLogger()
+logging.basicConfig(level=logging.INFO)
+
+
+###
+#
+#     ____     __   _ __   __  __     __   _ __  
+#    /',__\  /'__`\/\`'__\/\ \/\ \  /'__`\/\`'__\
+#   /\__, `\/\  __/\ \ \/ \ \ \_/ |/\  __/\ \ \/ 
+#   \/\____/\ \____\\ \_\  \ \___/ \ \____\\ \_\ 
+#    \/___/  \/____/ \/_/   \/__/   \/____/ \/_/                                            
+# 
+# Listen to any path, and proxy or serve cache as necessary...
+#
+@app.route('/', defaults={'path': ''})
+@app.route('/<path:path>', methods=['GET', 'POST', 'PUT'])
+def catch_all(path):
+    return handle_request(request, path)
+
+
+if __name__ == '__main__':
+    arguments = docopt(__doc__, version='1.0')
+    app.config['dataset'] = arguments.get('--dataset')
+    app.config['load_origin'] = arguments.get('--load-origin')
+
+    # TODO:
+    # if arguments.get('--base-folder'):
+    #     app.config['base_folder'] = arguments.get('--base-folder')
+    # TODO: make sure the folder is writeable
+
+    if arguments.get('--debug'):
+        logger.setLevel(logging.DEBUG)
+
+    logger.info(' Using configuration:')
+    logger.info('  - dataset: {}'.format(app.config['dataset']))
+    logger.info('  - load_origin: {}'.format(app.config['load_origin']))
+
+    port = os.environ.get('HULK_PORT', 6000)
+
+    app.run(host='0.0.0.0', port=port)

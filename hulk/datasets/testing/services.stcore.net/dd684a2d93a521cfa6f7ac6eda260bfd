@@ -1,0 +1,131 @@
+{
+   "total_process_time_ms" : 1444,
+   "total" : 2,
+   "results" : {
+      "option_codes" : [
+         {
+            "cluster_desc" : "Seats & Seat Trim",
+            "item_avail" : "O",
+            "acode" : "CAB20CAC011B0",
+            "option_desc" : "Driver & Passenger Heated Variable Adaptive Seat",
+            "option_code" : "AC9"
+         },
+         {
+            "cluster_desc" : "Seats & Seat Trim",
+            "item_avail" : "S",
+            "acode" : "CAB20CAC011B0",
+            "option_desc" : "40/20/40 Split Front Seat",
+            "option_code" : "AN3"
+         },
+         {
+            "cluster_desc" : "Other Options",
+            "item_avail" : "O",
+            "acode" : "CAB20CAC011B0",
+            "option_desc" : "Rear Seat Side Airbags",
+            "option_code" : "AW9"
+         },
+         {
+            "cluster_desc" : "Other Options",
+            "item_avail" : "O",
+            "acode" : "CAB20CAC011B0",
+            "option_desc" : "Electric Sliding Tinted Glass Roof Panel",
+            "option_code" : "CF5"
+         },
+         {
+            "cluster_desc" : "Powertrain",
+            "item_avail" : "S",
+            "acode" : "CAB20CAC011B0",
+            "option_desc" : "Engine: 4.6L V8 SFI Northstar",
+            "option_code" : "LD8"
+         },
+         {
+            "cluster_desc" : "Powertrain",
+            "item_avail" : "S",
+            "acode" : "CAB20CAC011B0",
+            "option_desc" : "Transmission: Electronic 4-Speed Automatic w/OD",
+            "option_code" : "MX0"
+         },
+         {
+            "cluster_desc" : "Other Options",
+            "item_avail" : "O",
+            "acode" : "CAB20CAC011B0",
+            "option_desc" : "Radio: AM Stereo/FM Stereo w/CD",
+            "option_code" : "NONRD"
+         },
+         {
+            "cluster_desc" : "Other Options",
+            "item_avail" : "S",
+            "acode" : "CAB20CAC011B0",
+            "option_desc" : "Monotone Paint Application",
+            "option_code" : "PAINT"
+         },
+         {
+            "cluster_desc" : "Other Options",
+            "item_avail" : "S",
+            "acode" : "CAB20CAC011B0",
+            "option_desc" : "Radio: AM Stereo/FM Stereo w/CD/Cassette",
+            "option_code" : "STDRD"
+         },
+         {
+            "cluster_desc" : "Wheels & Tires",
+            "item_avail" : "S",
+            "acode" : "CAB20CAC011B0",
+            "option_desc" : "Tires: P225/60R16 AS S-Rated",
+            "option_code" : "STDTR"
+         },
+         {
+            "cluster_desc" : "Wheels & Tires",
+            "item_avail" : "S",
+            "acode" : "CAB20CAC011B0",
+            "option_desc" : "Wheels: 16\" x 7\" 7-Spoke Premium Chrome",
+            "option_code" : "STDWL"
+         },
+         {
+            "cluster_desc" : "Other Options",
+            "item_avail" : "O",
+            "acode" : "CAB20CAC011B0",
+            "option_desc" : "6 Disc CD Changer in Glovebox",
+            "option_code" : "U1Z"
+         },
+         {
+            "cluster_desc" : "Other Options",
+            "item_avail" : "O",
+            "acode" : "CAB20CAC011B0",
+            "option_desc" : "DVD Navigation System",
+            "option_code" : "U3R"
+         },
+         {
+            "cluster_desc" : "Other Options",
+            "item_avail" : "O",
+            "acode" : "CAB20CAC011B0",
+            "option_desc" : "Night Vision Heads Up Display",
+            "option_code" : "UV2"
+         },
+         {
+            "cluster_desc" : "Other Options",
+            "item_avail" : "O",
+            "acode" : "CAB20CAC011B0",
+            "option_desc" : "Safety & Security Package",
+            "option_code" : "WA8"
+         },
+         {
+            "cluster_desc" : "Other Options",
+            "item_avail" : "O",
+            "acode" : "CAB20CAC011B0",
+            "option_desc" : "Preliminary Invoice",
+            "option_code" : "Z31"
+         },
+         {
+            "cluster_desc" : "Seats & Seat Trim",
+            "item_avail" : "S",
+            "acode" : "CAB20CAC011B0",
+            "option_desc" : "Leather Seat Trim",
+            "option_code" : "~~3"
+         }
+      ],
+      "acode" : [
+         "CAB20CAC011B0"
+      ]
+   },
+   "offset" : 0
+}
