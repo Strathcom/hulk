@@ -34,9 +34,6 @@ def create_dataset_folder(base_folder, child_folder):
 
 
 def build_filename(path, vals):
-    logger.debug('Building file name with request method "{}"'.format(
-        request.method))
-
     # in order to make this loading of data consistent, we want to eliminate
     # all key/value pairs that have 'None' for values, and then alphabetize 
     # the keys. This will ensure a consistent cache name.
@@ -71,6 +68,7 @@ def load_original(request):
 
     if request.method == 'GET':
         req = requests.get(request.url)
+
         if req.status_code != 200:
             raise IFuckedUpException(
                 'Could\'t load the original data for {}'.format(request))
@@ -79,13 +77,6 @@ def load_original(request):
         return req.text
 
     if request.method == 'POST':
-        # we have to parse out the data into a dict for proxying
-        # eg: we have foo=bar&this=that
-        # data = {}
-        # import pdb; pdb.set_trace()
-        # for pair in request.data.split('&'):
-        #     params = pair.split('=')
-        #     data[params[0]] = params[1]
         params = request.args.to_dict()
         data = request.form.to_dict()
 

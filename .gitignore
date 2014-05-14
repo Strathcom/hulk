@@ -56,3 +56,5 @@ Vagrantfile
 local_settings.py*
 *.pyc
 firstrun
+
+.coverage
