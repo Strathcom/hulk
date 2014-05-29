@@ -14,8 +14,10 @@ from hulk.exceptions import IFuckedUpException
 
 logger = logging.getLogger()
 
-dataset_folder = os.path.join(os.path.abspath(os.path.dirname(__file__)),
-                              'datasets')
+dataset_folder = os.environ.get(
+    "HULK_DATASET_BASE_DIR", 
+    os.path.join(os.path.abspath(os.path.dirname(__file__)), 'datasets')
+)
 
 
 def create_dataset_folder(base_folder, child_folder):

@@ -1,20 +1,23 @@
 import requests
 import logging
 import os
+from urlparse import urlparse
 
 from flask import session
 from requests.models import Request, Response
 from requests.compat import builtin_str
-from hulk.utils import build_filename
-from urlparse import urlparse
+from hulk.utils import build_filename, dataset_folder
 
-CURRENT_DATASET = None # FIXME: This should be more robust... much more.
+CURRENT_DATASET_FILENAME = "/tmp/current_dataset.hulk"
+DEFAULT_DATASET = os.environ.get("HULK_DATASET", "default")
+
+def set_default_dataset(dataset):
+    global DEFAULT_DATASET
+    DEFAULT_DATASET = dataset
 
 def patched_request(dataset):
 
-    global CURRENT_DATASET
-
-    CURRENT_DATASET = dataset
+    print "======================================", "patched_request"
 
     def patched(self, method, url,
             params=None,
@@ -59,12 +62,17 @@ def patched_request(dataset):
             values = dict(params.items() + data.items())
 
         parsed_url = urlparse(url)
-        filename = build_filename(parsed_url.path, 
-            values)
+        filename = build_filename(parsed_url.path, values)
+
+        # determine which dataset to use
+        with open(CURRENT_DATASET_FILENAME, "r") as f:
+            dataset = f.read().strip()
+        if not dataset:
+            dataset = DEFAULT_DATASET
 
         # import pdb; pdb.set_trace()
         # try to load file
-        full_path = os.path.join(dataset, parsed_url.hostname, 
+        full_path = os.path.join(dataset_folder, dataset, parsed_url.hostname, 
             filename[0])
 
         logging.info('Attempting to load dataset: {}'.format(full_path))
@@ -104,14 +112,21 @@ def with_dataset(dataset_name):
 
         def wrapped_func(*a, **kw):
             print "======================================== I WAS JUST IN WRAPPED_FUNC()"
-            print "CURRENT_DATASET", CURRENT_DATASET
             print 'dataset_name', dataset_name
 
-            previous_dataset = CURRENT_DATASET
-            patch_requests(dataset_name)
-            return_value = original_func(*a, **kw)
-            patch_requests(previous_dataset)
-            return return_value
+            # First, signal to hulk to switch to the correct dataset
+
+            with open(CURRENT_DATASET_FILENAME, "w") as current_dataset:
+                current_dataset.write(dataset_name)
+
+            return_value = original_func(*a, **kw)      # Now try calling the test
+
+            # Lastly, signal to hulk to switch to the original dataset
+
+            with open(CURRENT_DATASET_FILENAME, "w") as current_dataset:
+                current_dataset.write("")
+
+            return return_value     # Annnddd, we're done.
 
         return wrapped_func
 
