@@ -11,6 +11,7 @@ import json
 from flask import request, make_response
 from hulk.exceptions import IFuckedUpException
 
+CURRENT_DATASET_FILENAME = "/tmp/current_dataset.hulk"
 
 logger = logging.getLogger()
 

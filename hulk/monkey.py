@@ -1,3 +1,4 @@
+from sys import stdout
 import requests
 import logging
 import os
@@ -6,18 +7,15 @@ from urlparse import urlparse
 from flask import session
 from requests.models import Request, Response
 from requests.compat import builtin_str
-from hulk.utils import build_filename, dataset_folder
+from hulk.utils import build_filename, dataset_folder, CURRENT_DATASET_FILENAME
 
-CURRENT_DATASET_FILENAME = "/tmp/current_dataset.hulk"
 DEFAULT_DATASET = os.environ.get("HULK_DATASET", "default")
 
 def set_default_dataset(dataset):
     global DEFAULT_DATASET
     DEFAULT_DATASET = dataset
 
-def patched_request(dataset):
-
-    print "======================================", "patched_request"
+def patched_request():
 
     def patched(self, method, url,
             params=None,
@@ -65,8 +63,12 @@ def patched_request(dataset):
         filename = build_filename(parsed_url.path, values)
 
         # determine which dataset to use
-        with open(CURRENT_DATASET_FILENAME, "r") as f:
-            dataset = f.read().strip()
+        dataset = None
+        try:
+            with open(CURRENT_DATASET_FILENAME, "r") as f:
+                dataset = f.read().strip()
+        except IOError:
+            pass
         if not dataset:
             dataset = DEFAULT_DATASET
 
@@ -99,10 +101,10 @@ def patched_request(dataset):
     return patched
 
 
-def patch_requests(dataset):
-    requests.Session.request = patched_request(dataset)
+def patch_requests():
+    requests.Session.request = patched_request()
 
-def with_dataset(dataset_name):
+def with_dataset(dataset_name, print_on_call=True):
     """
     This decorator wraps a patch_requests() call around the associated function. When that function is called we will
     change the data set that is being injected by hulk. Once the function returns, we revert to the previous dataset.
@@ -111,8 +113,18 @@ def with_dataset(dataset_name):
     def instantiate_func(original_func):
 
         def wrapped_func(*a, **kw):
-            print "======================================== I WAS JUST IN WRAPPED_FUNC()"
-            print 'dataset_name', dataset_name
+
+            # This IF statement a convenience when running tests with verbose  
+            # mode enabled. It prints out the name of the current data set,  
+            # similar to:
+            #
+            # test_new_<snip>_filter (<snip>) ... (dataset: test-inventory) ok
+            # test_filter_<snip>_name (<snip>) ... (dataset: test-search) ok
+            #
+
+            if print_on_call:
+                stdout.write('(dataset: ' + dataset_name + ') ')
+                stdout.flush()
 
             # First, signal to hulk to switch to the correct dataset
 
