@@ -41,8 +41,10 @@ def build_filename(path, vals):
     # all key/value pairs that have 'None' for values, and then alphabetize 
     # the keys. This will ensure a consistent cache name.
     values = {}
-    values.update((k, v) for k, v in vals.iteritems() if v is not None)
-    values = collections.OrderedDict(sorted(values.items()))
+
+    if vals:    # may be None if no query string args
+        values.update((k, v) for k, v in vals.iteritems() if v is not None)
+        values = collections.OrderedDict(sorted(values.items()))                                 
 
     logger.debug('Using ordered values: {}'.format(values))
 
