@@ -111,6 +111,12 @@ def load_original(request):
         logger.debug('success!')
         return req.text
         
+    # raise Exception('We don\'t handle that method type.')
+
+
+def get_dataset_folder():
+    return dataset_folder
+
 
 def save_original(path, content):
     logger.debug('writing file {}'.format(path))
@@ -136,13 +142,11 @@ def record_file(dataset, hashname, content_type, full_url):
 
     record = {}
     with open(file_path, 'r+') as infile:
-
         content = infile.read()
         if content:
             record = json.loads(content)
             infile.seek(0)
             infile.truncate()
-
 
         record[hashname] = {
             'content-type': content_type,
@@ -150,8 +154,3 @@ def record_file(dataset, hashname, content_type, full_url):
         }
 
         infile.write(json.dumps(record))
-
-
-
-
-
