@@ -2,6 +2,8 @@ import sys
 import requests
 import logging
 import os
+import time
+from fcntl import flock, LOCK_EX
 from urlparse import urlparse
 
 from flask import session
@@ -68,14 +70,19 @@ def patched_request():
         filename = build_filename(parsed_url.path, values)
 
         # determine which dataset to use
+
         dataset = None
+        dataset_file = None
 
         try:
-            with open(CURRENT_DATASET_FILENAME, "r") as f:
-                dataset = f.read().strip()  # NOTE! `dataset` may be set to ""
+            dataset_file = open(CURRENT_DATASET_FILENAME, "rw")
         except IOError:
             pass
 
+        if dataset_file:
+            flock(dataset_file, LOCK_EX) # block until we can acquire the lock
+            dataset = dataset_file.read().strip() # NOTE! `dataset` may be set to ""
+        
         if not dataset:
             dataset = DEFAULT_DATASET
 
@@ -101,6 +108,9 @@ def patched_request():
         resp.status_code = status_code
         resp.url = prep.url
         resp._content = content
+
+        if dataset_file:
+            dataset_file.close()
 
         return resp
 
@@ -128,20 +138,22 @@ def with_dataset(dataset_name, print_on_call=True):
 
         def wrapped_func(*a, **kw):
 
-            if print_on_call: #"-v" in sys.argv:
-                sys.stdout.write('(dataset: ' + dataset_name + ') ')
-                sys.stdout.flush()
-
             # First, signal to hulk to switch to the correct dataset
 
             with open(CURRENT_DATASET_FILENAME, "w") as current_dataset:
+                flock(current_dataset, LOCK_EX)
                 current_dataset.write(dataset_name)
+
+            if print_on_call: #"-v" in sys.argv:
+                sys.stdout.write('(dataset: ' + dataset_name + ') ')
+                sys.stdout.flush()
 
             return_value = original_func(*a, **kw)    # Now try calling the test
 
             # Lastly, signal to hulk to switch to the original dataset
 
             with open(CURRENT_DATASET_FILENAME, "w") as current_dataset:
+                flock(current_dataset, LOCK_EX)
                 current_dataset.write("")
 
             return return_value     # Annnddd, we're done.
