@@ -56,7 +56,7 @@ def build_filename(path, vals):
 
     if vals:    # may be None if no query string args
         values.update((k, v) for k, v in vals.iteritems() if v is not None)
-        values = collections.OrderedDict(sorted(values.items()))                                 
+        values = collections.OrderedDict(sorted(values.items()))
 
     logger.debug('Using ordered values: {}'.format(values))
 

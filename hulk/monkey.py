@@ -11,6 +11,7 @@ from requests.models import Request, Response
 from requests.compat import builtin_str
 from hulk.utils import build_filename, dataset_folder, CURRENT_DATASET_FILENAME
 
+
 DEFAULT_DATASET = os.environ.get("HULK_DATASET", "default")
 
 def set_default_dataset(dataset):
@@ -38,11 +39,6 @@ def patched_request():
             stream=None,
             verify=None,
             cert=None):
-        
-        print method
-        print url
-        print params
-        print data
 
         ### Borrowed directly from requests.Session.request ###
         method = builtin_str(method)
