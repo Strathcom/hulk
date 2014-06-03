@@ -2,7 +2,7 @@ import sys
 import requests
 import logging
 import os
-import time
+import types
 from fcntl import flock, LOCK_EX
 from urlparse import urlparse
 
@@ -120,12 +120,28 @@ def patched_request():
 def patch_requests():
     requests.Session.request = patched_request()
 
+def set_dataset(dataset_name, print_on_call=True):
+
+    with open(CURRENT_DATASET_FILENAME, "w") as current_dataset:
+        flock(current_dataset, LOCK_EX)
+        current_dataset.write(dataset_name)
+
+    if print_on_call: #"-v" in sys.argv:
+        sys.stdout.write('(dataset: ' + dataset_name + ') ')
+        sys.stdout.flush()
+
+def reset_dataset():
+
+    with open(CURRENT_DATASET_FILENAME, "w") as current_dataset:
+        flock(current_dataset, LOCK_EX)
+        current_dataset.write("")
+
 def with_dataset(dataset_name, print_on_call=True):
     """
-    This decorator wraps a patch_requests() call around the associated 
-    function. When that function is called we will change the dataset that is 
-    being injected by hulk. Once the function returns, we revert to the 
-    previous dataset.
+    This decorator wraps a function or TestCase class. When that function or the
+    TestCase's run() method is called we will change the dataset that is being 
+    injected by hulk. Once the function returns, we revert to the default 
+    dataset.
 
     :param dataset_name: The name of the dataset (folder underneath the hulk 
         base directory) to use for this function call.
@@ -134,30 +150,27 @@ def with_dataset(dataset_name, print_on_call=True):
         out. Helpful when the test runner is running the verbose flag.
     """
     
-    def instantiate_func(original_func):
+    def instantiate_func(original_obj):
 
-        def wrapped_func(*a, **kw):
+        if isinstance(original_obj, types.FunctionType):
 
-            # First, signal to hulk to switch to the correct dataset
+            def wrapped_obj(*a, **kw):
+                set_dataset(dataset_name, print_on_call)
+                return_value = original_obj(*a, **kw)    # Now try calling the test
+                reset_dataset()
+                return return_value     # Annnddd, we're done.
 
-            with open(CURRENT_DATASET_FILENAME, "w") as current_dataset:
-                flock(current_dataset, LOCK_EX)
-                current_dataset.write(dataset_name)
+        else:
 
-            if print_on_call: #"-v" in sys.argv:
-                sys.stdout.write('(dataset: ' + dataset_name + ') ')
-                sys.stdout.flush()
+            def hulk_run(self, *a, **kw):   # FIXME, do we want to ensure that the class passed in inherits from TestCase?
+                set_dataset(dataset_name)
+                return_value = super(original_obj, self).run(*a, **kw)
+                reset_dataset()
+                return return_value
 
-            return_value = original_func(*a, **kw)    # Now try calling the test
+            wrapped_obj = original_obj
+            wrapped_obj.run = hulk_run
 
-            # Lastly, signal to hulk to switch to the original dataset
-
-            with open(CURRENT_DATASET_FILENAME, "w") as current_dataset:
-                flock(current_dataset, LOCK_EX)
-                current_dataset.write("")
-
-            return return_value     # Annnddd, we're done.
-
-        return wrapped_func
+        return wrapped_obj
 
     return instantiate_func
