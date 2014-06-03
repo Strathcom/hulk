@@ -36,14 +36,27 @@ def create_dataset_folder(base_folder, child_folder):
             raise
 
 
+def clear_working_data():
+    """
+    Deletes the current dataset file, if it exists. Typically, you'd want to 
+    call this in the setUpClass method of your test class.
+    """
+
+    try:
+        os.unlink(CURRENT_DATASET_FILENAME)
+    except OSError:
+        pass
+
+
 def build_filename(path, vals):
     # in order to make this loading of data consistent, we want to eliminate
     # all key/value pairs that have 'None' for values, and then alphabetize 
     # the keys. This will ensure a consistent cache name.
     values = {}
-    if vals:
+
+    if vals:    # may be None if no query string args
         values.update((k, v) for k, v in vals.iteritems() if v is not None)
-    values = collections.OrderedDict(sorted(values.items()))
+        values = collections.OrderedDict(sorted(values.items()))
 
     logger.debug('Using ordered values: {}'.format(values))
 
