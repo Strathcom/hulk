@@ -47,7 +47,6 @@ dist/
 *.sublime-project
 *.sublime-workspace
 
-Vagrantfile
 .vagrant
 .env
 
