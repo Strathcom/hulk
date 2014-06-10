@@ -114,6 +114,16 @@ def patched_request():
 
 
 def patch_requests():
+
+    # test that requests is version 2:
+
+    version = [int(i) for i in requests.__version__.split('.')]
+    if version[0] < 2:
+        print "ERROR: hulk.monkey.path_requests is only compatible with requests > 2.0.0"
+        import sys
+        sys.exit(1)
+
+    # TODO make this work for requests 1.x
     requests.Session.request = patched_request()
 
 def set_dataset(dataset_name, print_on_call=True):
@@ -145,8 +155,11 @@ def with_dataset(dataset_name, print_on_call=True):
     :param print_on_call: If True then the name of the dataset will be printed
         out. Helpful when the test runner is running the verbose flag.
     """
+    # need to make sure requests is patched
+    patch_requests()
     
     def instantiate_func(original_obj):
+
 
         if isinstance(original_obj, types.FunctionType):
 

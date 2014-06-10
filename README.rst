@@ -10,6 +10,8 @@ Introduction
 ============
 `hulk` is a big dumb proxy server for testing service-heavy applications. Designed for use with `requests` (and possibly `urllib`). `hulk` caches request data behind the scenes for later use in application testing.
 
+**NOTE** `hulk` is only currently compatible with `requests>=2.0.0`.
+
 Author
 ------
 Aaron Fay
