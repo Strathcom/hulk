@@ -8,9 +8,9 @@
 
 Introduction
 ============
-`hulk` is a big dumb proxy server for testing service-heavy applications. Designed for use with `requests` (and possibly `urllib`). `hulk` caches request data behind the scenes for later use in application testing.
+:code:`hulk` is a big dumb proxy server for testing service-heavy applications. Designed for use with :code:`requests` (and possibly `urllib`). `hulk` caches request data behind the scenes for later use in application testing.
 
-**NOTE** `hulk` is only currently compatible with `requests>=2.0.0`.
+**NOTE**: :code:`hulk` is only currently compatible with :code:`requests>=2.0.0`.
 
 Author
 ------
@@ -27,22 +27,27 @@ See *Usage*.
 
 Installation
 ============
-Either pull down this repository or use the `Vagrantfile` provided in the repo.
+Either pull down this repository or use the :code:`Vagrantfile` provided in the repo.
 
 
 Usage
 =====
 
 Vagrant
-~~~~~~~
-You're going to need [Vagrant](http://vagrantup.com) if you want to use the included `Vagrantfile`.
+-------
+You're going to need `Vagrant <http://vagrantup.com>`_  if you want to use the included :code:`Vagrantfile`.
 
 Quickstart:
+
+.. code-block:: bash 
 
     $ vagrant up
     $ vagrant ssh
 
 The login should give you something that looks like this:
+
+
+.. code-block:: bash
 
     Welcome to Ubuntu 12.04.1 LTS (GNU/Linux 3.2.0-32-generic x86_64)
 
@@ -64,11 +69,13 @@ The login should give you something that looks like this:
         $ hulk -h
 
 Follow the instructions (the last couple lines) to get started. Note that you'll
-want the second IP address listed above to set as your `HTTP_PROXY` later. 
+want the second IP address listed above to set as your :code:`HTTP_PROXY` later. 
 
 
 Hulk command line reference
 ---------------------------
+
+.. code-block::
 
     (hulk)vagrant@vagrant-ubuntu:~$ hulk -h
     Big dumb proxy server for testing service-heavy applications.
@@ -83,8 +90,10 @@ Hulk command line reference
       --debug             Run hulk with debugging info
       --help -h           Show this screen.
 
-The first time you run `hulk` you'll want to use the `--load-origin` flag to 
-have `hulk` load the original service call data and cache it to disk.
+The first time you run :code:`hulk` you'll want to use the :code:`--load-origin` flag to 
+have :code:`hulk` load the original service call data and cache it to disk.
+
+.. code-block:: bash
 
     $ hulk --load-origin
 
@@ -94,51 +103,62 @@ requests will use the cached file.
 
 Datasets
 --------
-`datasets` allow you to have different sets of data for different scenarios, 
+:code:`datasets` allow you to have different sets of data for different scenarios, 
 possible test suites or even different applications. To get started with a 
 new dataset, run:
 
+.. code-block:: bash
+
     $ hulk --load-origin --dataset=my-new-dataset
 
-The new dataset `my-new-dataset` will be created in the `datasets` folder. To 
+The new dataset :code:`my-new-dataset` will be created in the :code:`datasets` folder. To 
 run hulk with the dataset in the future, just run:
+
+.. code-block:: bash
 
     $ hulk --dataset=my-new-dataset
 
 `HULK_DATASET_BASE_DIR`
 ~~~~~~~~~~~~~~~~~~~~~~~
-By default, hulk creates a `datasets` folder relative to the hulk installation.
+By default, hulk creates a :code:`datasets` folder relative to the hulk installation.
 If you would like to change the location where the datasets get stored, you 
-can set the `HULK_DATASET_BASE_DIR` environment variable. This should be an 
+can set the :code:`HULK_DATASET_BASE_DIR` environment variable. This should be an 
 absolute path to where you want the datasets to be saved, for example:
+
+.. code-block:: bash
 
     $ export HULK_DATASET_BASE_DIR=/tmp/datasets
 
 
 Using `HTTP_PROXY`
 ------------------
-Following the tradition of it's predecessors, the fantastic `requests` library
-honors the `HTTP_PROXY` environment variable and will use the value specified
+Following the tradition of it's predecessors, the fantastic :code:`requests` library
+honors the :code:`HTTP_PROXY` environment variable and will use the value specified
 as the proxy server for all requests. For example, if you run your application 
 like so:
+
+.. code-block:: bash
 
     $ export HTTP_PROXY=http://192.168.0.166:6000 && run_my_application
 
 There are a couple important things to note here:
 
- - you must specify the protocol (eg `http://`)
- - `hulk` runs on port `6000` by default
+* you must specify the protocol (eg :code:`http://`)
+* :code:`hulk` runs on port `6000` by default
 
 Now, you should be able to navigate your app and watch the hulk server load and
 serve your service data.
 
 
-Using the datasets without `hulk`
+Using the datasets without :code:`hulk`
 ---------------------------------
-There is also a decorator available to patch `requests` so you can utilize 
-datasets in your test suite without running hulk: `hulk.monkey.with_dataset`.
+There is also a decorator available to patch :code:`requests` so you can utilize 
+datasets in your test suite without running hulk: :code:`hulk.monkey.with_dataset`.
 
 This decorator can be used on a per-method or per-class basis. For example:
+
+
+.. code:: python
 
     from hulk.monkey import with_dataset
     import unittest
@@ -161,7 +181,7 @@ This decorator can be used on a per-method or per-class basis. For example:
 
 *Note*: The class- and method-level decorators cannot be currently used together
 in a stack-like fashion, meaning that if you use a class-level decorator, then
-use a method-level decorator, `with_dataset` will not fall back to the 
+use a method-level decorator, :code:`with_dataset` will not fall back to the 
 class-level decorator. Currently it is recommended to use the decorator at the 
 class level.
 
@@ -169,13 +189,15 @@ Tests
 =====
 To run the tests:
 
+.. code-block:: bash 
+
     $ nosetests --with-spec --spec-color --with-coverage --cover-package=hulk
 
 
 Change Log
 ==========
- * 0.2.0: adds `with_dataset` decorator, class decorator support, and updated docs.
- * 0.1.0: initial version
+* 0.2.0: adds :code:`with_dataset` decorator, class decorator support, and updated docs.
+* 0.1.0: initial version
 
 
 Dev Notes
@@ -188,10 +210,10 @@ Design Decisions
 
 Roadmap
 =======
- * load/save datasets in S3
- * test with urllib[1|2|3]
- * specify base_url
- * test decorators
+* load/save datasets in S3
+* test with urllib[1|2|3]
+* specify base_url
+* test decorators
  
 
 .. footer:: Copyright |date| Strathcom Media
