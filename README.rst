@@ -11,11 +11,11 @@ Introduction
 :code:`hulk` is a big dumb proxy server for testing service-heavy applications. 
 Designed for use with :code:`requests>=2.0.0`. `hulk` caches request data 
 behind the scenes for later use in application testing. Note that :code:`hulk` is
-not a mocking library, it caches *actual service calls* for later use. We've found
-that when we have dozens of large API requests to internal and external sources, we
-were spending too much time trying to mock out the data, and it was often incomplete
-and brittle, or that data applied under one context, but would need another mock for
-a slightly different context. 
+not a mocking library, it caches *actual service calls* for later use. We've found that 
+when we have dozens of large API requests to internal and external sources 
+(and in every imaginable format), we were spending too much time trying to mock out the 
+data, and then the mocks were often incomplete and brittle, or that data applied under 
+one context, but would need another mock for a slightly different context.
 
 Instead of writing mocks until the end of time, we wrote hulk. Hulk does the heavy 
 lifting so you can get busy writing tests.
