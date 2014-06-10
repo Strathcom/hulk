@@ -19,6 +19,11 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   # `vagrant box outdated`. This is not recommended.
   # config.vm.box_check_update = false
 
+  # sync up a tmp folder for dataset sharing
+  # NOTE that this folder needs to exist on your host	
+  #config.vm.synced_folder "/tmp/datasets", "/tmp/datasets"
+
+
   # Create a forwarded port mapping which allows access to a specific port
   # within the machine from a port on the host machine. In the example below,
   # accessing "localhost:8080" will access port 80 on the guest machine.

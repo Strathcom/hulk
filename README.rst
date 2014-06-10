@@ -25,7 +25,7 @@ See *Usage*.
 
 Installation
 ============
-Just run `pip install hulk` to install the project.
+Either pull down this repository or use the `Vagrantfile` provided in the repo.
 
 
 Usage
