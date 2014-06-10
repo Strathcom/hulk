@@ -8,7 +8,9 @@
 
 Introduction
 ============
-:code:`hulk` is a big dumb proxy server for testing service-heavy applications. Designed for use with :code:`requests` (and possibly `urllib`). `hulk` caches request data behind the scenes for later use in application testing.
+:code:`hulk` is a big dumb proxy server for testing service-heavy applications. 
+Designed for use with :code:`requests>=2.0.0`. `hulk` caches request data 
+behind the scenes for later use in application testing.
 
 **NOTE**: :code:`hulk` is only currently compatible with :code:`requests>=2.0.0`.
 
