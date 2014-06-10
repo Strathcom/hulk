@@ -29,7 +29,15 @@ See *Usage*.
 
 Installation
 ============
-Either pull down this repository or use the :code:`Vagrantfile` provided in the repo.
+
+.. code:: bash
+    
+    $ pip install hulk
+
+*OR*
+
+
+Pull down this repository or use the :code:`Vagrantfile` provided in the repo.
 
 
 Usage
