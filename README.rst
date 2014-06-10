@@ -159,14 +159,13 @@ like so:
 
     $ export HTTP_PROXY=http://192.168.0.166:6000 && run_my_application
 
-There are a couple important things to note here:
+...you should be able to navigate your app and watch the hulk server load and
+serve your service data.
+
+There are a couple important things to note with the above environment variable:
 
 * you must specify the protocol (eg :code:`http://`)
 * :code:`hulk` runs on port `6000` by default
-
-Now, you should be able to navigate your app and watch the hulk server load and
-serve your service data.
-
 
 Using the datasets without :code:`hulk`
 ---------------------------------
