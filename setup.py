@@ -12,6 +12,8 @@ required = [
 
 extras = {
     'develop': [
+        'nose',
+        'coverage',
     ]
 }
 

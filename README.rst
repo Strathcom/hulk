@@ -174,6 +174,7 @@ To run the tests:
 
 Change Log
 ==========
+ * 0.2.1: fix bug in `with_dataset` to ensure requests is patched, check requests version
  * 0.2.0: adds `with_dataset` decorator, class decorator support, and updated docs.
  * 0.1.0: initial version
 
