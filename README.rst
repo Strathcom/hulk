@@ -232,6 +232,7 @@ Roadmap
 * compatibility with requests < 2.0.0
 * load/save datasets in S3
 * compatibility with urllib/other http libs?
+* database support
  
 
 .. footer:: Copyright |date| Strathcom Media
