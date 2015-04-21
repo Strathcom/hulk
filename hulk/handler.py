@@ -1,4 +1,5 @@
 import logging
+import time
 import os
 
 from urlparse import urlparse
@@ -38,7 +39,10 @@ def handle_request(request, path):
 
         if app.config.get('load_origin'):
             logging.info('load_origin is set, loading original...')
+            timer_now = int(time.time() * 1000)
             content = load_original(request)
+            timer_done = int(time.time() * 1000)
+            logger.info('load time: {}ms'.format((timer_done - timer_now)))
             # TODO: maintain line-in-file <hash> <original-url>
             # TODO: prompt when overwriting files?
             save_original(file_path, content)

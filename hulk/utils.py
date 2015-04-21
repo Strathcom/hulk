@@ -117,14 +117,14 @@ def load_original(request):
         logger.debug('putting with params: {}'.format(params))
         logger.debug('putting with data: {}'.format(data))
         req = requests.put(request.url, data=data, params=params)
-        
+
         if req.status_code != 200:
             raise IFuckedUpException(
                 'Could\'t load the original data for {}'.format(request))
 
         logger.debug('success!')
         return req.text
-        
+
     # raise Exception('We don\'t handle that method type.')
 
 
